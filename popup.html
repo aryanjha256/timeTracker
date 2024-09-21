@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Website Time Tracker</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 p-4">
+    <div
+      class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl"
+    >
+      <div class="p-8 w-full">
+        <div
+          class="uppercase tracking-wide text-sm text-indigo-500 font-semibold mb-4"
+        >
+          Website Time Tracker
+        </div>
+        <div class="flex mb-4">
+          <button
+            id="dailyBtn"
+            class="flex-1 py-2 px-4 bg-indigo-500 text-white rounded-l"
+          >
+            Daily
+          </button>
+          <button
+            id="weeklyBtn"
+            class="flex-1 py-2 px-4 bg-indigo-300 text-white"
+          >
+            Weekly
+          </button>
+          <button
+            id="monthlyBtn"
+            class="flex-1 py-2 px-4 bg-indigo-300 text-white rounded-r"
+          >
+            Monthly
+          </button>
+        </div>
+        <ul id="timeList" class="mt-4 space-y-2"></ul>
+        <div class="mt-6 space-y-2">
+          <button
+            id="exportBtn"
+            class="w-full py-2 px-4 bg-green-500 text-white rounded"
+          >
+            Export Data
+          </button>
+          <button
+            id="resetBtn"
+            class="w-full py-2 px-4 bg-red-500 text-white rounded"
+          >
+            Reset Data
+          </button>
+          <button
+            id="blockSiteBtn"
+            class="w-full py-2 px-4 bg-yellow-500 text-white rounded"
+          >
+            Block Site
+          </button>
+          <button
+            id="showErrorsBtn"
+            class="w-full py-2 px-4 bg-purple-500 text-white rounded"
+          >
+            Show Error Log
+          </button>
+        </div>
+        <div
+          id="errorLog"
+          class="mt-4 p-2 bg-red-100 text-red-700 rounded hidden"
+        ></div>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
